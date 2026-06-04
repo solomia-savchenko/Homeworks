@@ -1,0 +1,33 @@
+body {
+    font-family:  Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 30px;
+    color: #242323;
+}
+
+h2 {
+    font-size: 20px;
+    color: #242323;
+}
+
+a {
+    text-decoration: none;
+    color: violet;
+    padding: 5px;
+    border: 1px solid #603a60;
+    border-radius: 3px;
+}
+
+a:hover {
+    background-color: #603a60;
+    color: white;
+}
+
+img {
+    width: 800px
+}

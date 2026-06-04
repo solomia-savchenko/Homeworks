@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+<html lang="en">
+<head>
+    <title>{% block title %}timetable html{% endblock %}</title>
+</head>
+<body>
+    {% block header%}Welcome to timetable{% endblock %}
+
+    {% block content %}
+    <div class="container text-center">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <h2>Time table</h2>
+                </div>
+                <table class="table table-light">
+                    <tr>
+                        <th>Bus</th>
+                        <th>Time</th>
+                    </tr>
+                    {% for transport, time in timetable %}
+                    <tr>
+                        <th>{{ transport }}</th>
+                        <th>{{ time }}</th>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

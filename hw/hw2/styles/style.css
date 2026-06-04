@@ -1,0 +1,361 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #006f6f;
+    color: #F3DFC0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 45px;
+    gap: 10px;
+}
+
+.logo img {
+    width: 65px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    gap: 40px;
+}
+
+nav a {
+    color: #F3DFC0;
+    text-decoration: none;
+}
+
+.user-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.user-actions img {
+    width: 50px;
+}
+
+.configuration {
+    position: sticky; 
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0px;
+}
+
+
+.courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 0px;
+    position: relative;
+    left: -10px;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.course img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px;
+}
+
+
+.configuration {
+    position: sticky;
+    top: 20px;
+    margin-left: -100px;
+    width: 200px;
+    background-color: #006f6f;
+    color: #F3DFC0;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.configuration .configuration-items2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: sticky;
+    top: -200px;
+}
+
+.configuration-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+
+.configuration-items span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.configuration-items a {
+    color: #F3DFC0;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.configuration-items a:hover {
+    background-color: rgba(243, 223, 192, 0.2);
+}
+
+.courses .course1, .courses .course2, .courses .course3, .courses .course4, .courses .course5, .courses .course6 {
+    padding-left: 0px;
+    padding-top: 0px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    border: 2px solid #1c44a1;
+    border-radius: 10px;
+}
+
+.courses .extra-info img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: -7px;
+}
+
+.courses .extra-info button {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: -140px;
+    top: -25px;
+}
+
+.courses img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.user-actions a:hover {
+    box-shadow: 0 0 15px rgba(52, 158, 180, 0.6);
+    transform: translateY(-3px);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.courses .extra-info .name {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    top: 25px;
+}
+
+.courses .extra-info .price {
+    font-size: 16px;
+    color: #555;
+    position: relative;
+}
+
+.courses .course1 .extra-info button, picture {
+    position: relative;
+    top: -5px;
+    right: -320px;
+}
+
+.courses .course1 .extra-info .age {
+    position: relative;
+    top: 8px;
+    right: -230px;
+}
+
+.courses .course1 .extra-info .name {
+    position: relative;
+    top: 50px;
+}
+
+.courses .course1 .extra-info .price {
+    position: relative;
+    top: 30px;
+}
+
+.courses .course2 .extra-info button, picture {
+    position: relative;
+    top: -15px;
+    right: -310px;
+}
+
+.courses .course2 .extra-info .age {
+    position: relative;
+    top: -10px;
+    right: -230px;
+}
+
+.courses .course2 .extra-info .name {
+    position: relative;
+    top: 50px;
+}
+
+.courses .course2 .extra-info .price {
+    position: relative;
+    left: 90px;
+    top: 10px;
+}
+
+.courses .course3 .extra-info button, picture {
+    position: relative;
+    top: -5px;
+    right: -320px;
+}
+
+.courses .course3 .extra-info .age {
+    position: relative;
+    top: -25px;
+    left: 200px;
+}
+
+.courses .course3 .extra-info .name {
+    position: relative;
+    top: 30px;
+}
+
+.courses .course3 .extra-info .price {
+    position: relative;
+    right: 0px;
+    top: 30px;
+}
+
+.courses .course4 .extra-info button, picture {
+    position: relative;
+    top: 0px;
+    right: -320px;
+}
+
+.course4 .extra-info .age {
+    position: relative;
+    top: -2px;
+    right: -200px;
+}
+
+.courses .course4 .extra-info .price {
+    position: relative;
+    right: 0px;
+    top: 52px;
+}
+
+.courses .course4 .extra-info .name {
+    position: relative;
+    top: 55px;
+}
+
+.courses .course5 .extra-info button, picture {
+    position: relative;
+    top: 0px;
+    right: -320px;
+}
+
+.course5 .extra-info .age {
+    position: relative;
+    top: -2px;
+    right: -200px;
+}
+
+.courses .course5 .extra-info .price {
+    position: relative;
+    right: 0px;
+    top: 52px;
+}
+
+.courses .course5 .extra-info .name {
+    position: relative;
+    top: 55px;
+}
+
+.courses .course6 .extra-info button, picture {
+    position: relative;
+    top: 0px;
+    right: -320px;
+}
+
+.courses .course6 .extra-info .age {
+    position: relative;
+    top: -20px;
+    right: -200px;
+}
+
+.courses .course6 .extra-info .price {
+    position: relative;
+    right: 0px;
+    top: 30px;
+}
+
+.courses .course6 .extra-info .name {
+    position: relative;
+    top: 35px;
+}
+
+
+.extra-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+}
+
+.best_courses {
+    position: relative;
+    top: -30px;
+    left: 280px;
+    font-size: 25px;
+}
+
+.extra-info .price {
+    display: inline-block;
+}
