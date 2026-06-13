@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+</head>
+<body>
+    <h1>Contact a Travel Agent</h1>
+
+    <form>
+        <label>Name:</label><br>
+        <input type="text"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email"><br><br>
+
+        <label>Message:</label><br>
+        <textarea></textarea><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <br>
+
+    <a href="{{ url_for('home') }}">
+        <button>Back to Home</button>
+    </a>
+
+    <a href="{{ url_for('countries') }}">
+        <button>Countries</button>
+    </a>
+</body>
+</html>

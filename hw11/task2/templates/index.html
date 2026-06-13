@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movies</title>
+</head>
+<body>
+    <h1>Popular Movies</h1>
+
+    <ul>
+        {% for id, movie in movies.items() %}
+            <li>
+                <a href="{{ url_for('movie', id=id) }}">
+                    {{ movie.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ url_for('random_movie') }}">
+        <button>Random Movie</button>
+    </a>
+</body>
+</html>
